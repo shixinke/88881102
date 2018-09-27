@@ -26,7 +26,5 @@
       "envtool\\":"/src/envtool"
     }
   },
-  "scripts":{
-    "dev":"bin/devtool --env dev --config .env --path env --example .env.example start"
-  }
+  "bin":["bin/envtool"]
 }
