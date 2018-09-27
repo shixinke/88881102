@@ -1,0 +1,32 @@
+{
+  "name": "shixinke/envtool",
+  "description": "an environment management tool for php application",
+  "version":"0.0.1",
+  "type": "library",
+  "repositories": [
+    {
+      "type":"vcs",
+      "url" : "http://github.com/shixinke/envtool"
+    }
+  ],
+  "homepage":"http://www.shixinke.com",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "shixinke",
+      "email": "ishixinke@qq.com",
+      "homepage" : "http://www.shixinke.com"
+    }
+  ],
+  "require": {
+    "php" : ">=5.3.0"
+  },
+  "autoload":{
+    "psr-4":{
+      "envtool\\":"/src/envtool"
+    }
+  },
+  "scripts":{
+    "dev":"bin/devtool --env dev --config .env --path env --example .env.example start"
+  }
+}
